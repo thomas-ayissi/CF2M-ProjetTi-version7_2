@@ -29,7 +29,7 @@ require_once "config.php"; // configuration
 // Routeur (identifier la signification de la ligne isset et
 // du pg qu il faut get. La résolution du problème peut venir de cet examen.
 
-if(!isset($_GET['pg'])){
+if(isset($_GET['pg'])){
     // chargement accueil
     include_once "visible/homepage.php";
 }else{
